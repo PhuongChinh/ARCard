@@ -1,0 +1,90 @@
+import { CardsService } from './cards.service';
+import { CreateCardDto, UpdateCardDto } from './dto/card.dto';
+export declare class CardsController {
+    private readonly cardsService;
+    constructor(cardsService: CardsService);
+    create(createCardDto: CreateCardDto, req: Express.Request): Promise<{
+        description: string | null;
+        title: string;
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        markerImage: string;
+        targetModel: string;
+        modelScale: number;
+        zoomLimit: number;
+        isActive: boolean;
+        qrCode: string | null;
+        scanCount: number;
+    }>;
+    findAll(): Promise<{
+        description: string | null;
+        title: string;
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        markerImage: string;
+        targetModel: string;
+        modelScale: number;
+        zoomLimit: number;
+        isActive: boolean;
+        qrCode: string | null;
+        scanCount: number;
+    }[]>;
+    findOne(id: string): Promise<{
+        description: string | null;
+        title: string;
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        markerImage: string;
+        targetModel: string;
+        modelScale: number;
+        zoomLimit: number;
+        isActive: boolean;
+        qrCode: string | null;
+        scanCount: number;
+    }>;
+    update(id: string, updateCardDto: UpdateCardDto): Promise<{
+        description: string | null;
+        title: string;
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        markerImage: string;
+        targetModel: string;
+        modelScale: number;
+        zoomLimit: number;
+        isActive: boolean;
+        qrCode: string | null;
+        scanCount: number;
+    }>;
+    remove(id: string): Promise<{
+        description: string | null;
+        title: string;
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        markerImage: string;
+        targetModel: string;
+        modelScale: number;
+        zoomLimit: number;
+        isActive: boolean;
+        qrCode: string | null;
+        scanCount: number;
+    }>;
+    incrementScan(id: string): Promise<{
+        description: string | null;
+        title: string;
+        id: string;
+        createdAt: Date;
+        updatedAt: Date;
+        markerImage: string;
+        targetModel: string;
+        modelScale: number;
+        zoomLimit: number;
+        isActive: boolean;
+        qrCode: string | null;
+        scanCount: number;
+    }>;
+}

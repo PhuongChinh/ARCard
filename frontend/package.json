@@ -1,0 +1,40 @@
+{
+  "name": "arcard-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "dev:http": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:https": "node server.js",
+    "generate-certs": "node scripts/generate-certs.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.96.1",
+    "@react-three/fiber": "^8.15.14",
+    "ar.js": "^2.2.2",
+    "axios": "^1.6.5",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.312.0",
+    "mind-ar": "^1.2.5",
+    "next": "14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "tailwind-merge": "^2.2.0",
+    "three": "^0.161.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@types/three": "^0.161.2",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "selfsigned": "^5.5.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
